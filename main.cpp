@@ -26,7 +26,18 @@ int main()
 		{
 			for (int j = 0; j < 10; ++j)
 			{
-				cout << map.getMap()[i][j];
+				if (map.getMap()[i][j] == 0)
+				{
+					cout << ' ';
+				}
+				else if (map.getMap()[i][j] == 1)
+				{
+					cout << '*';
+				}
+				else if (map.getMap()[i][j] == 2)
+				{
+					cout << 'P';
+				}
 			}
 			cout << endl;
 		}
